@@ -117,6 +117,7 @@ void* strangle_requireFunction( const char* name ) {
 
 	if (func == NULL) {
 		printf( "Strangle: Failed to get function %s\n", name );
+		exit( 1 );
 	}
 
 	return func;
